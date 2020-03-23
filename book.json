@@ -1,5 +1,14 @@
 {
-  "plugins": [],
+  "plugins": ["donate"],
   "variables": {},
-  "pluginsConfig": {}
+  "pluginsConfig": {
+    "donate": {
+      "wechat": "./assets/images/payme.jpeg",
+      "alipay": "支付宝收款的二维码URL",
+      "title": "",
+      "button": "赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
+    }
+  }
 }
