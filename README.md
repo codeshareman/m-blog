@@ -1,5 +1,2 @@
-# my-blog
+# Introduction
 
-personal blog
-
-### dsakdj 
