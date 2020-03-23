@@ -1,3 +1,3 @@
-# my-blog
+# Introduction
 
-personal blog
+personal-blog
