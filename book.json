@@ -1,5 +1,5 @@
 {
-  "plugins": ["chapter-fold", "expandable-chapters"],
+  "plugins": [],
   "variables": {},
   "pluginsConfig": {}
 }
