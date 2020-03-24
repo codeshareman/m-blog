@@ -1,5 +1,25 @@
 {
-  "plugins": [],
+  "plugins": [
+    "terminal",
+    "hide-element",
+    "back-to-top-button",
+    "pageview-count",
+    "donate"
+  ],
   "variables": {},
-  "pluginsConfig": {}
+  "pluginsConfig": {
+    "hide-element": {
+      "elements": [".gitbook-link"]
+    },
+    "terminal": {
+      "copyButtons": true,
+      "fade": false,
+      "style": "flat"
+    },
+    "donate": {
+      "wechat": "/assets/images/donate.jpeg",
+      "button": "赏",
+      "wechatText": "微信打赏"
+    }
+  }
 }
