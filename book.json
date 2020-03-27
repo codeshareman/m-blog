@@ -1,13 +1,24 @@
 {
-  "plugins": ["donate"],
+  "plugins": [
+    "terminal",
+    "hide-element",
+    "back-to-top-button",
+    "pageview-count",
+    "donate"
+  ],
   "variables": {},
   "pluginsConfig": {
+    "hide-element": {
+      "elements": [".gitbook-link"]
+    },
+    "terminal": {
+      "copyButtons": true,
+      "fade": false,
+      "style": "flat"
+    },
     "donate": {
-      "wechat": "./assets/images/payme.jpeg",
-      "alipay": "支付宝收款的二维码URL",
-      "title": "",
+      "wechat": "/assets/images/donate.jpeg",
       "button": "赏",
-      "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
     }
   }
