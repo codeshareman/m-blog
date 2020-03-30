@@ -10,3 +10,11 @@ before_script:
   - yarn global add gitbook-cli
 script:
   - gitbook build
+deploy:
+  provider: deploy
+  skip_cleanup: true
+  github_token: $GITHUB_BLOG
+  keep_history: true
+  on:
+    branch: master
+  local_dir: _book
