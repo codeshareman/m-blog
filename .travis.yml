@@ -11,7 +11,7 @@ before_script:
 script:
   - gitbook build
 deploy:
-  provider: deploy
+  provider: page
   skip_cleanup: true
   github_token: $GITHUB_BLOG
   keep_history: true
