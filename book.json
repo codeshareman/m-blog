@@ -1,11 +1,5 @@
 {
-  "plugins": [
-    "terminal",
-    "hide-element",
-    "back-to-top-button",
-    "pageview-count",
-    "donate"
-  ],
+  "plugins": ["terminal", "hide-element", "back-to-top-button", "pageview-count"],
   "variables": {},
   "pluginsConfig": {
     "hide-element": {
@@ -15,11 +9,6 @@
       "copyButtons": true,
       "fade": false,
       "style": "flat"
-    },
-    "donate": {
-      "wechat": "/assets/images/donate.jpeg",
-      "button": "赏",
-      "wechatText": "微信打赏"
     }
   }
 }

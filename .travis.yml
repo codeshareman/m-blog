@@ -1,0 +1,12 @@
+language: node_js
+node_js: 11.10.1
+branchs:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
+before_script:
+  - yarn global add gitbook-cli
+script:
+  - gitbook build
