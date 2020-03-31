@@ -2,14 +2,14 @@ language: node_js
 node_js: 11.10.1
 branchs:
   only:
-    - master
+  - master
 cache:
   directories:
-    - node_modules
+  - node_modules
 before_script:
-  - yarn global add gitbook-cli
+- yarn global add gitbook-cli
 script:
-  - gitbook build
+- gitbook build
 deploy:
   provider: page
   skip_cleanup: true
@@ -18,3 +18,6 @@ deploy:
   on:
     branch: master
   local_dir: _book
+before_install:
+- openssl aes-256-cbc -K $encrypted_04674a2f3de9_key -iv $encrypted_04674a2f3de9_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
