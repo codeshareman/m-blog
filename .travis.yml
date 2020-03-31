@@ -13,7 +13,7 @@ script:
 deploy:
   provider: page
   skip_cleanup: true
-  github_token: $GITHUB_BLOG
+  github_token: "$GITHUB_BLOG"
   keep_history: true
   on:
     branch: master
