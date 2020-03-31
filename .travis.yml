@@ -17,4 +17,4 @@ before_install:
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 after_success:
-- ssh test -o StrictHostKeyChecking=no 'cd ~/travis/m-blog && git pull && gitbook build'
+- ssh travis@49.235.1.23 -o StrictHostKeyChecking=no 'cd ~/travis/m-blog && git pull && gitbook build'
