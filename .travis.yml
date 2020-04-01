@@ -25,10 +25,9 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: false
-  target-branch: travis-build
   on:
     branch: master
-  target-branch:
+  target-branch: travis-build
   local-dir: ./_book/blog
 after_script:
   - ssh travis@49.235.1.23 -o StrictHostKeyChecking=no 'cd /usr/share/nginx/html/m-blog && git pull && git checkout travis-build'
