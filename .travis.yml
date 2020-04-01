@@ -25,6 +25,7 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
+  local_dir: ./_book/blog
   on:
     branch: master
 after_script:
