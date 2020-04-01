@@ -24,6 +24,8 @@ after_success:
   - git remote add origin https://github.com/codeshareman/m-blog.git
   - git add .
   - git commit -m "travis自动构建"
+  - git config --global user.name "codeshareman"
+  - git config --global user.email "305168898@qq.com"
   - git checkout -b travis-build
   - git push origin travis-build
   - ssh travis@49.235.1.23 -o StrictHostKeyChecking=no 'cd /usr/share/nginx/html/m-blog && git pull && git checkout travis-build'
