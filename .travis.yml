@@ -22,12 +22,12 @@ script:
   - gitbook build
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_BLOG
-  keep-history: false
+  skip_cleanup: true
+  github_token: $GITHUB_BLOG
+  keep_history: false
   on:
     branch: master
-  target-branch: travis-build
-  local-dir: ./_book/blog
+  target_branch: travis-build
+  local_dir: ./_book/blog
 after_script:
   - ssh travis@49.235.1.23 -o StrictHostKeyChecking=no 'cd /usr/share/nginx/html/m-blog && git pull && git checkout travis-build'
