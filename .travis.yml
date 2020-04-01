@@ -27,5 +27,5 @@ after_success:
   - git config user.email "305168898@qq.com"
   - git add .
   - git commit -m "travis自动构建"
-  - git push --force --quiet "https://${GITHUB_BLOG}@${GH_REF}" master:travis-build
+  - git push --force --quiet ${GH_REF} travis-build
   - ssh travis@49.235.1.23 -o StrictHostKeyChecking=no 'cd /usr/share/nginx/html/m-blog && git pull && git checkout travis-build'
