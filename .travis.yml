@@ -12,20 +12,23 @@ cache:
     - node_modules
 before_script:
   - yarn global add gitbook-cli
-script:
-  - gitbook build
 addons:
   ssh_known_hosts: 49.235.1.23
 before_install:
   - openssl aes-256-cbc -K $encrypted_04674a2f3de9_key -iv $encrypted_04674a2f3de9_iv
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
-after_success:
-  - cd ./_book/blog
-  - git init
-  - git config user.name "codeshareman"
-  - git config user.email "305168898@qq.com"
-  - git add .
-  - git commit -m "travis自动构建"
-  - git push --force --quiet "https://${GITHUB_BLOG}@${GH_REF}" master:travis-build
+script:
+  - gitbook build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: false
+  target-branch: travis-build
+  on:
+    branch: master
+  target-branch:
+  local-dir: ./_book/blog
+after_script:
   - ssh travis@49.235.1.23 -o StrictHostKeyChecking=no 'cd /usr/share/nginx/html/m-blog && git pull && git checkout travis-build'
