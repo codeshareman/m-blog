@@ -6,7 +6,7 @@ branchs:
     - master
 env:
   global:
-    - GH_REF: https://github.com/codeshareman/m-blog.git
+    - GH_REF: github.com/codeshareman/m-blog.git
 cache:
   directories:
     - node_modules
