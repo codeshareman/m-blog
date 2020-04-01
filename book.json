@@ -1,0 +1,14 @@
+{
+  "plugins": ["terminal", "hide-element", "back-to-top-button", "pageview-count"],
+  "variables": {},
+  "pluginsConfig": {
+    "hide-element": {
+      "elements": [".gitbook-link"]
+    },
+    "terminal": {
+      "copyButtons": true,
+      "fade": false,
+      "style": "flat"
+    }
+  }
+}
