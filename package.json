@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "gitbook-plugin-chapter-fold": "^0.0.4"
+  }
+}

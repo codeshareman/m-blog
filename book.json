@@ -1,14 +1,59 @@
 {
-  "plugins": ["terminal", "hide-element", "back-to-top-button", "pageview-count"],
+  "title": "codesharemanの网络日志",
+  "styles": {
+    "website": "./styles/website.css"
+  },
+  "plugins": [
+    "code",
+    "hide-element",
+    "back-to-top-button",
+    "pageview-count",
+    "lightbox",
+    "flexible-alerts",
+    "search-pro",
+    "donate",
+    "hide-element",
+    "expandable-chapters"
+  ],
   "variables": {},
   "pluginsConfig": {
     "hide-element": {
       "elements": [".gitbook-link"]
     },
-    "terminal": {
-      "copyButtons": true,
-      "fade": false,
-      "style": "flat"
+    "code": {
+      "copyButtons": true
+    },
+    "donate": {
+      "wechat": "/assets/images/donate.jpeg",
+      "title": "",
+      "button": "赏"
+    },
+    "expandable-chapters": {},
+    "flexible-alerts": {
+      "note": {
+        "label": {
+          "de": "Hinweis",
+          "en": "Note"
+        }
+      },
+      "tip": {
+        "label": {
+          "de": "Tipp",
+          "en": "Tip"
+        }
+      },
+      "warning": {
+        "label": {
+          "de": "Warnung",
+          "en": "Warning"
+        }
+      },
+      "danger": {
+        "label": {
+          "de": "Achtung",
+          "en": "Attention"
+        }
+      }
     }
   }
 }
