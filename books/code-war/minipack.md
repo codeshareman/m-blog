@@ -5,20 +5,20 @@
 <br/>
 #### 一、几个基础概念:
 
-<code>chunk: </code>bundle 是由许多个 chunk 组成的，通常 chunkh 和 bundle 一一对应，但也有一对多的关系
+<code>chunk: </code> bundle 是由许多个 chunk 组成的，通常 chunkh 和 bundle 一一对应，但也有一对多的关系
 
-- <code>entry chunk</code>
+- entry chunk
   - 包含 webpack runtime code 并且是最先执行的 chunk
-- <code>initial chunk</code>
+- initial chunk
   - 包含同步加载进来的 module 且不包含 runtime code 的 chunk
   - 在 entry chunk 执行后再执行的
-- <code>normal chunk</code>
+- normal chunk
   - 使用 require.ensure、import()异步加载进来的 module，会被放到 normal chunk 中
 
-<code>bundle:</code> 由多个不同的模块产生，它是已经加载完毕和被编译后的源代码的最终版本<br/>
-<code> graph:</code> 用来描述文件之间的依赖关系的图。从入口起点开始以递归的方式构建各个文件之间的依赖关系<br/>
-<code>loader:</code> 资源正确加载的加载器<br/>
-<code>plugins:</code>增强型功能插件 与<code>loader</code>互补<br/>
+<code>bundle: </code> 由多个不同的模块产生，它是已经加载完毕和被编译后的源代码的最终版本<br/>
+<code> graph: </code> 用来描述文件之间的依赖关系的图。从入口起点开始以递归的方式构建各个文件之间的依赖关系<br/>
+<code>loader: </code> 资源正确加载的加载器<br/>
+<code>plugins:</code> 增强型功能插件 与<code>loader</code>互补<br/>
 
 #### 二、什么是模块
 
