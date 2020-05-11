@@ -1,7 +1,4 @@
-.markdown-section code {
+.markdown-section .keyword {
   background: #3e6abb;
   color: #fff;
-}
-.code-wrapper .code-line{
-    color: #000;
 }

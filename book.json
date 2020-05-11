@@ -12,7 +12,8 @@
     "search-pro",
     "donate",
     "hide-element",
-    "expandable-chapters"
+    "expandable-chapters",
+    "prism"
   ],
   "variables": {},
   "pluginsConfig": {
@@ -28,6 +29,14 @@
       "button": "赏"
     },
     "expandable-chapters": {},
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-solarizedlight.css"
+      ],
+      "lang": {
+        "flow": "javascript"
+      }
+    },
     "flexible-alerts": {
       "note": {
         "label": {

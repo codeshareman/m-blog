@@ -5,7 +5,7 @@
 <br/>
 #### 一、几个基础概念:
 
-<code>chunk: </code> bundle 是由许多个 chunk 组成的，通常 chunkh 和 bundle 一一对应，但也有一对多的关系
+<code class="keyword">chunk: </code> bundle 是由许多个 chunk 组成的，通常 chunkh 和 bundle 一一对应，但也有一对多的关系
 
 - entry chunk
   - 包含 webpack runtime code 并且是最先执行的 chunk
@@ -15,15 +15,15 @@
 - normal chunk
   - 使用 require.ensure、import()异步加载进来的 module，会被放到 normal chunk 中
 
-<code>bundle: </code> 由多个不同的模块产生，它是已经加载完毕和被编译后的源代码的最终版本<br/>
-<code> graph: </code> 用来描述文件之间的依赖关系的图。从入口起点开始以递归的方式构建各个文件之间的依赖关系<br/>
-<code>loader: </code> 资源正确加载的加载器<br/>
-<code>plugins:</code> 增强型功能插件 与<code>loader</code>互补<br/>
+<code class="keyword">bundle: </code> 由多个不同的模块产生，它是已经加载完毕和被编译后的源代码的最终版本<br/>
+<code class="keyword"> graph: </code> 用来描述文件之间的依赖关系的图。从入口起点开始以递归的方式构建各个文件之间的依赖关系<br/>
+<code class="keyword">loader: </code> 资源正确加载的加载器<br/>
+<code class="keyword">plugins:</code> 增强型功能插件 与 loader 互补<br/>
 
 #### 二、什么是模块
 
-<code>模块</code> <font size=1>是一组与特定功能相关的代码。它封装了实现细节，公开了一个公共 API，并与其他模块结合以构建更大的应用程序。</font><br/>
-<code>模块化</code> 就是为了实现更高级别的抽象，它将一类或多种实现封装到一个模块中，我们不必考虑模块内是怎样的依赖关系，仅仅调用它暴露出来的 API 即可<br/>
+<code class="keyword">模块</code> <font size=1>是一组与特定功能相关的代码。它封装了实现细节，公开了一个公共 API，并与其他模块结合以构建更大的应用程序。</font><br/>
+<code class="keyword">模块化</code> 就是为了实现更高级别的抽象，它将一类或多种实现封装到一个模块中，我们不必考虑模块内是怎样的依赖关系，仅仅调用它暴露出来的 API 即可<br/>
 例如:
 
 ```
@@ -57,9 +57,9 @@ SO，前端的浏览器模块定义来了:
 
 #### 三、什么是打包器
 
-<code>打包器</code> 就是把 javascript 模块化代码转化为浏览器可识别运行的优化工具
+<code class="keyword">打包器</code> 就是把 javascript 模块化代码转化为浏览器可识别运行的优化工具
 
-<code>常用打包工具</code> webpack、rollup、gulp、grunt
+<code class="keyword">常用打包工具</code> webpack、rollup、gulp、grunt
 
 举个例子，你在一个 html 文件中引入多个 JavaScript 文件：
 
@@ -104,7 +104,7 @@ Graph 关系
 3. 使用依赖关系图，生成一个浏览器可以执行的函数(IIFE)
    - IIFE 立即执行函数，由于 JavaScript 变量的作用域仅限于函数内部，所以你不必考虑它会污染全局变量。<br/>
 4. 通过文件流将生成的文件字符串输出到 output 指定的文件中
-   <code>fs.writeFile</code> 写入 dist/bundle.js 即可。
+   fs.writeFile 写入 dist/bundle.js 即可。
 
 #### 五、写在最后
 
