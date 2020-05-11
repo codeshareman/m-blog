@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Jest · codesharemanの网络日志</title>
+        <title>Taro · codesharemanの网络日志</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -81,8 +81,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="taro.html" />
     
+    <link rel="prev" href="jest.html" />
     
 
     </head>
@@ -202,7 +202,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="jest.html">
+        <li class="chapter " data-level="1.4.1" data-path="jest.html">
             
                 <a href="jest.html">
             
@@ -215,7 +215,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="taro.html">
+        <li class="chapter active" data-level="1.4.2" data-path="taro.html">
             
                 <a href="taro.html">
             
@@ -308,7 +308,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Jest</a>
+        <a href="../.." >Taro</a>
     </h1>
 </div>
 
@@ -326,59 +326,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="jest">Jest</h2>
+                                <h2 id="taro">Taro</h2>
 <ul>
-<li>Q: <code class="keyword">Jest</code> &#x5982;&#x4F55;&#x751F;&#x6210;&#x914D;&#x7F6E;&#x6587;&#x4EF6; &#xFF1F;<br></li>
-<li><p>A: jest --init</p>
-</li>
-<li><p>Q: <code class="keyword">Jest</code> &#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230; &quot;@babel/preset-env&quot; &#x600E;&#x4E48;&#x89E3;&#x51B3; &#xFF1F;<br></p>
-</li>
-<li><p>A: Jest &#x5728;&#x6267;&#x884C;&#x524D;&#x4F1A;&#x53BB;&#x8BFB;&#x53D6; babel.config.js &#x6216;&#x7740; .babelrc &#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x53BB;&#x68C0;&#x67E5;&#x4E0B;&#x662F;&#x5426;&#x6709;&#x5982;&#x4E0B;&#x914D;&#x7F6E;</p>
-<pre class="language-"><code>  // .babelrc
-   &quot;test&quot;: {
-    &quot;presets&quot;: [[&quot;@babel/preset-env&quot;], &quot;@babel/preset-react&quot;, &quot;@babel/preset-typescript&quot;]
-  }
-</code></pre></li>
-<li><p>Q: <code class="keyword">Jest</code> &#x4E2D;&#x5982;&#x4F55;&#x89E3;&#x6790; .ts|.tsx &#x7684;&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;&#xFF1F;<br></p>
-</li>
-<li><p>A:</p>
-<pre class="language-"><code>      // &#x5B89;&#x88C5; babel-jest
-      yarn add babel-jest --dev
-      // &#x5728; jest.config.js &#x4E2D;&#x914D;&#x7F6E;
-      {
-          moduleFileExtensions: [&apos;js&apos;, &apos;jsx&apos;, &apos;ts&apos;, &apos;tsx&apos;],
-          rootDir: &apos;./&apos;,
-          transform: {
-              // &apos;^.+\\.tsx?$&apos;: &apos;ts-jest&apos;,
-              &apos;^.+\\.[t|j]sx?$&apos;: &apos;babel-jest&apos;,
-          },
-          testMatch: [
-              &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rootDir</span><span class="token punctuation">&gt;</span></span>/__test__/*.(test|specs).[jt]s?(x)&apos;,
-              // &quot;**/__tests__/**/*.[jt]s?(x)&quot;
-              //   &quot;**/?(*.)+(spec|test).[tj]s?(x)&quot;
-          ],
-      }
-</code></pre></li>
-<li><p>Q: <code class="keyword">enzyme</code> &#x5982;&#x4F55;&#x5BF9; react &#x9879;&#x76EE;&#x8FDB;&#x884C;&#x5355;&#x5143;&#x6D4B;&#x8BD5;<br></p>
-</li>
-<li><p>A:</p>
-<pre class="language-"><code>// step 1
-yarn add enzyme @types/enzyme --dev
-yarn add enzyme-adapter-react-16 --dev
-
-// step 2 &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6; setupFiles -&gt; enzyme.config.js
-import Enzyme from &apos;enzyme&apos;
-import Adapter from &apos;enzyme-adapter-react-16&apos;
-Enzyme.configure({ adapter: new Adapter() })
-
-// step 3 &#x5728;jest.config.js&#x4E2D;&#x914D;&#x7F6E;
-setupFiles: [&apos;./enzyme.config.js&apos;],
-
-// step 4 &#x5728;package.json&#x4E2D;&#x6307;&#x5B9A;jest&#x914D;&#x7F6E;&#x6587;&#x4EF6;
-{
-    &quot;test&quot;: &quot;jest --config ./jest.config.js&quot;
-}
-</code></pre></li>
+<li>Q: comand &#x2018;taro&#x2019; not found ? <br></li>
+<li>A: &#x9700;&#x8981;&#x6DFB;&#x52A0;&#x8F6F;&#x94FE;&#x63A5; <code>ln -f -s ~/.config/yarn/global/node_modules/@tarojs/cli/bin/taro /usr/local/bin/taro </code></li>
 </ul>
 
                                 
@@ -423,10 +374,10 @@ setupFiles: [&apos;./enzyme.config.js&apos;],
 
             
                 
-                
-                <a href="taro.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Taro">
-                    <i class="fa fa-angle-right"></i>
+                <a href="jest.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Jest">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -435,7 +386,7 @@ setupFiles: [&apos;./enzyme.config.js&apos;],
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Jest","level":"1.4.1","depth":2,"next":{"title":"Taro","level":"1.4.2","depth":2,"path":"books/practice/taro.md","ref":"./books/practice/taro.md","articles":[]},"previous":{"title":"爬坑の日常","level":"1.4","depth":1,"ref":"","articles":[{"title":"Jest","level":"1.4.1","depth":2,"path":"books/practice/jest.md","ref":"./books/practice/jest.md","articles":[]},{"title":"Taro","level":"1.4.2","depth":2,"path":"books/practice/taro.md","ref":"./books/practice/taro.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["code","hide-element","back-to-top-button","pageview-count","flexible-alerts","search-pro","donate","hide-element","expandable-chapters","prism"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"javascript"}},"search-pro":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"/assets/images/donate.jpeg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"de":"Achtung","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"de":"Hinweis","en":"Note"}},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"de":"Tipp","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"de":"Warnung","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"codesharemanの网络日志","gitbook":"*"},"file":{"path":"books/practice/jest.md","mtime":"2020-05-11T10:30:35.777Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-11T10:31:30.008Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Taro","level":"1.4.2","depth":2,"next":{"title":"設定ファイル","level":"1.5","depth":1,"ref":"","articles":[{"title":"Jest 配置","level":"1.5.1","depth":2,"path":"books/configuration/jest.md","ref":"./books/configuration/jest.md","articles":[]}]},"previous":{"title":"Jest","level":"1.4.1","depth":2,"path":"books/practice/jest.md","ref":"./books/practice/jest.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","hide-element","back-to-top-button","pageview-count","flexible-alerts","search-pro","donate","hide-element","expandable-chapters","prism"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"flow":"javascript"}},"search-pro":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"/assets/images/donate.jpeg","wechatText":"微信打赏"},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"de":"Achtung","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"de":"Hinweis","en":"Note"}},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"de":"Tipp","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"de":"Warnung","en":"Warning"}}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"codesharemanの网络日志","gitbook":"*"},"file":{"path":"books/practice/taro.md","mtime":"2020-05-11T10:30:35.777Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-11T10:31:30.008Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
