@@ -7,6 +7,7 @@
   - [Javascript](./books/foundation/javascript.md)
 - 爬坑の日常
   - [Jest](./books/practice/jest.md)
+  - [Taro](./books/practice/taro.md)
 - 設定ファイル
   - [Jest 配置](./books/configuration/jest.md)
 - インタビュー
