@@ -11,3 +11,6 @@
 - 設定ファイル
   - [Jest 配置](./books/configuration/jest.md)
 - インタビュー
+- 人生を記録する
+  - [美味しいお店](./books/life/delicious.md)
+  - [南東、北西](./books/life/journey.md)
