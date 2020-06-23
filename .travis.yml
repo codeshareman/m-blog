@@ -17,7 +17,7 @@ before_install:
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
 script:
-  - yarn global add gitbook-cli
+  - yarn global add gitbook-cli --frozen-lockfile
   - gitbook install
   - gitbook build
 deploy:
