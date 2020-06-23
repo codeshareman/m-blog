@@ -16,14 +16,15 @@ before_install:
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
 script:
-  - yarn global add gitbook-cli --frozen-lockfile
+  - yarn global add gitbook-cli
   - gitbook install
   - gitbook build
 deploy:
   provider: pages
-  skip_cleanup: true
+  cleanup: true
   token: $GITHUB_TOKEN
   keep_history: true
+  strategy: git
   local_dir: ./_book
   on:
     branch: master
