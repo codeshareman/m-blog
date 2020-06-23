@@ -1,7 +1,6 @@
 language: node_js
 node_js: 11.10.1
-sudo: required
-branchs:
+branches:
   only:
     - master
 env:
@@ -23,7 +22,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
   keep_history: true
   local_dir: ./_book
   on:
