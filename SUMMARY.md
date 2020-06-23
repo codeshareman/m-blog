@@ -22,3 +22,6 @@
 - 人生を記録する
   - [美味しいお店](./books/life/delicious.md)
   - [南東、北西](./books/life/journey.md)
+  - [良書](./books/life/books.md)
+  - [視聴覚](./books/life/audiovisual.md)
+  

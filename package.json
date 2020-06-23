@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "install": "gitbook install",
+    "serve": "gitbook serve"
+  },
   "dependencies": {
     "gitbook-plugin-chapter-fold": "^0.0.4"
   }
