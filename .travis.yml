@@ -11,8 +11,9 @@ cache:
     - node_modules
 addons:
   ssh_known_hosts: 49.235.1.23
+before_script: 
+  - npm i gitbook-cli -g
 script:
-  - yarn global add gitbook-cli
   - gitbook install
   - gitbook build
 before_install:
@@ -20,7 +21,7 @@ before_install:
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
 install:
-  - yarn
+  - npm install
 deploy:
   provider: pages
   cleanup: true
