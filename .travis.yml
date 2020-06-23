@@ -10,8 +10,6 @@ env:
 cache:
   directories:
     - node_modules
-before_script:
-  - yarn global add gitbook-cli
 addons:
   ssh_known_hosts: 49.235.1.23
 before_install:
@@ -19,6 +17,7 @@ before_install:
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
 script:
+  - yarn global add gitbook-cli
   - gitbook install
   - gitbook build
 deploy:
