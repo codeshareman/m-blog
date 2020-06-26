@@ -6,9 +6,6 @@ branches:
 env:
   global:
     - GH_REF: github.com/codeshareman/m-blog.git
-cache:
-  directories:
-    - node_modules
 addons:
   ssh_known_hosts: 49.235.1.23
 before_install:
