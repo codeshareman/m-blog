@@ -11,7 +11,6 @@
 - 設定ファイル
   - [Jest 配置](./books/configuration/jest.md)
 - インタビュー
-
   - ソースノート
     - [React](./books/interview/sourcecode/React.md)
   - [アルゴリズムの原理](./books/interview/algorithm-principle/index.md)
