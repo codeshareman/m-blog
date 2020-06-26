@@ -1,5 +1,5 @@
 {
-  "scripts": {
+  "script": {
     "install": "gitbook install",
     "serve": "gitbook serve",
     "test": ""
