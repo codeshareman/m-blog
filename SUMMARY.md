@@ -17,7 +17,6 @@
   - [Javascript](./books/interview/javascript.md)
   - [CSS](./books/interview/css.md)
   - [Architecture](./books/interview/architecture.md)
-
 - 人生を記録する
   - [美味しいお店](./books/life/delicious.md)
   - [南東、北西](./books/life/journey.md)

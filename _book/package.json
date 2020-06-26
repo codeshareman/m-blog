@@ -1,9 +1,15 @@
 {
+  "name": "m-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/codeshareman/m-blog.git",
+  "author": "“codeshareman” <305168898@qq.com>",
+  "license": "MIT",
   "scripts": {
     "install": "gitbook install",
-    "serve": "gitbook serve"
-  },
-  "dependencies": {
-    "gitbook-plugin-chapter-fold": "^0.0.4"
+    "serve": "gitbook serve",
+    "test": "echo \"OK\""
   }
 }
+
+
