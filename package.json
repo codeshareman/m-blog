@@ -1,7 +1,36 @@
 {
-  "script": {
+  "name": "m-blog",
+  "version": "1.0.0",
+  "description": "codeshareman's blog",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-flexible-alerts": "^1.0.3",
+    "gitbook-plugin-hide-element": "^0.0.4",
+    "gitbook-plugin-pageview-count": "^1.0.1",
+    "gitbook-plugin-prism": "^2.4.0",
+    "gitbook-plugin-search-pro": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
     "install": "gitbook install",
     "serve": "gitbook serve",
-    "test": ""
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeshareman/m-blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "codeshareman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeshareman/m-blog/issues"
+  },
+  "homepage": "https://github.com/codeshareman/m-blog#readme"
 }
