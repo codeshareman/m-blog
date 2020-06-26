@@ -11,9 +11,8 @@ cache:
     - node_modules
 addons:
   ssh_known_hosts: 49.235.1.23
-before_script: 
-  - npm i gitbook-cli -g
 script:
+  - npm i gitbook-cli -g
   - gitbook install
   - gitbook build
 before_install:
