@@ -1,6 +1,7 @@
 {
   "scripts": {
     "install": "gitbook install",
-    "serve": "gitbook serve"
+    "serve": "gitbook serve",
+    "test": ""
   }
 }
